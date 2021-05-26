@@ -1,0 +1,13 @@
+
+
+.Menu {
+    width: 200px;
+    height: 500px;
+    background-color: white;
+    display: none;
+}
+
+
+.MenuItem {
+    margin-top: 50px;
+}

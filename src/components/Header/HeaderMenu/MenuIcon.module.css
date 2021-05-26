@@ -1,0 +1,13 @@
+.MenuIcon img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    padding-left: 20px;
+    padding-top: 5px;
+    
+}
+
+.Menu2 {
+    display: none;
+}
+
