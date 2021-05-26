@@ -4,7 +4,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        МАСТЕРСКАЯ МАКСОНИ
+        МАСТЕРСКАЯ МАКСОНИИ
       </header>
     </div>
   );
