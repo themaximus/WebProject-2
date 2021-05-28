@@ -1,0 +1,12 @@
+.MiniNewsBoard {
+    width: 17%;
+    height: 700px;
+    background-color: blueviolet;
+    float: left;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.MiniNewsBoardItem {
+    margin-left: 20px;
+}

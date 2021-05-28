@@ -5,10 +5,12 @@ import c from './Menu.module.css';
 
 const Menu = () => {
     return (
-        <div className={c.Menu} id='Men' onClick= {Menuu2} >
-        <div>Главная</div>
-        <div>Видеотека</div>
-        <div>Проигрователь</div>
+        <div className={c.Menu} id='Men'  >
+        <p className={c.MenuItemFirst}>Навигатор по проектам</p>
+        <p className={c.MenuItem}>Вильтарский Соннектион</p>
+        <p className={c.MenuItem}>3D Моделирование</p>
+        <p className={c.MenuItem}>Музыка</p>
+        <p className={c.MenuItem}>Кулинария</p>
         </div>
     )
 }

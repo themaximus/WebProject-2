@@ -5,9 +5,35 @@
     height: 500px;
     background-color: white;
     display: none;
+    text-align:left;
+    
 }
 
+
+.MenuItemFirst {
+    margin-top: 50px;
+    font-weight:bold;
+    font-size: 20px;
+    margin-left: 20px ;
+}
+
+.MenuItemFirst:hover {
+    color: rgb(90, 90, 90);
+    background: rgba(102, 102, 102, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+  }
 
 .MenuItem {
-    margin-top: 50px;
+    
+    font-weight:bold;
+    font-size: 20px;
+    margin-left: 20px ;
 }
+
+.MenuItem:hover {
+    color: rgb(90, 90, 90);
+    background: rgba(102, 102, 102, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+  }

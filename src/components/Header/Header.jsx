@@ -9,7 +9,9 @@ const Header = () => {
         <div className={c.Header}>
             <HeaderLogo />
             <MenuIcon />
+            <div className={c.betatest}><a>Тестовая версия сайта. Содержимое не имеет финальный вид.</a></div>
             <Menu />
+            
         </div>
     )
 }

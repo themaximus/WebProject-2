@@ -5,9 +5,20 @@
     background-color: white;
     float: left;
     position: relative;
-    
+    position: fixed;
+    z-index: 10;
 }
 
 .HeaderName {
     float: left;
 }
+
+.betatest {
+    margin-left: 900px;
+    
+    height: 50px;
+    color: rgb(175, 175, 175);
+    float: left;
+   
+}
+

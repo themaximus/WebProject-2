@@ -1,11 +1,31 @@
+
+.MenuIcon {
+    width: 50px;
+    height: 40px;
+    float: left;
+    padding-left: 10px;
+    
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
 .MenuIcon img {
     width: 40px;
     height: 40px;
-    float: left;
-    padding-left: 20px;
-    padding-top: 5px;
+    right: 20px;
+    
     
 }
+
+
+.MenuIcon:hover {
+    color: rgb(189, 189, 189);
+    background: rgba(102, 102, 102, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
 
 .Menu2 {
     display: none;
