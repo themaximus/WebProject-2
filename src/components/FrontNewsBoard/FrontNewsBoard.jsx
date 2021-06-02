@@ -7,7 +7,7 @@ const FrontNewsBoard = () => {
     return (
         <div className={c.FrontNewsBoard}>
             <FrontNewsSlider />
-            <a>Главная статья с изображением и заголовком</a>
+           
         </div>
     )
 }

@@ -1,0 +1,17 @@
+
+
+
+.boba {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: solid brown 2px;
+    position: relative;
+}
+
+
+
+.slider_items {
+    left: 0px;
+    position: relative;
+}
