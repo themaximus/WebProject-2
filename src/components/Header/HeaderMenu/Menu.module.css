@@ -2,12 +2,15 @@
 
 .Menu {
     width: 200px;
-    height: 500px;
+    height: 700px;
     background-color: white;
     display: none;
     text-align:left;
+    text-decoration: none;
+    
     
 }
+
 
 
 .MenuItemFirst {
@@ -15,6 +18,8 @@
     font-weight:bold;
     font-size: 20px;
     margin-left: 20px ;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 .MenuItemFirst:hover {
@@ -22,6 +27,7 @@
     background: rgba(102, 102, 102, 0.2);
     cursor: pointer;
     text-decoration: none;
+    
   }
 
 .MenuItem {
@@ -29,6 +35,8 @@
     font-weight:bold;
     font-size: 20px;
     margin-left: 20px ;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 .MenuItem:hover {

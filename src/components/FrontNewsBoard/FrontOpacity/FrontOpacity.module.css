@@ -1,0 +1,14 @@
+
+.FrontOpacity {
+    width: 1334px;
+    height: 753px;
+    background-color: rgb(212, 212, 212);
+    opacity: .5;
+    position: relative;
+    position: absolute;
+    z-index: 2;
+    display: none;
+    float: left;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}

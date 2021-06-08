@@ -1,4 +1,5 @@
 import FrontNewsBoard from "./FrontNewsBoard/FrontNewsBoard"
+import FrontOpacity from "./FrontNewsBoard/FrontOpacity/FrontOpacity"
 import Header from "./Header/Header"
 import MiniNewsBoard from "./MiniNewsBoard/MiniNewsBoard"
 
@@ -9,6 +10,7 @@ const Content = () => {
         <div>
            <MiniNewsBoard />
            <FrontNewsBoard />
+           
         </div>
     )
 }

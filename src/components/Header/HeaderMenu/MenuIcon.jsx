@@ -1,6 +1,6 @@
 import c from './MenuIcon.module.css';
-import Menuu from './dropSpoiler.js';
-import Menuu2 from './dropSpoiler2';
+import { Menuu, Menuu2} from './dropSpoiler.js';
+
 
 
 

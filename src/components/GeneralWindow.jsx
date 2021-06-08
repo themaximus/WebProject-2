@@ -1,6 +1,7 @@
 import Content from "./Content"
 import Header from "./Header/Header"
 import c from './GeneralWindow.module.css';
+import FrontOpacity from "./FrontNewsBoard/FrontOpacity/FrontOpacity";
 
 
 
@@ -9,6 +10,7 @@ const GeneralWindow = () => {
         <div className={c.GeneralWindow}>
             <Header/>
             <Content/>
+            <FrontOpacity/>
         </div>
     )
 }
