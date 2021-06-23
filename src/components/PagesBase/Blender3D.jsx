@@ -1,6 +1,7 @@
 import c from "./Blender3D.module.css";
-import FrontOpacity from "./FrontNewsBoard/FrontOpacity/FrontOpacity"
-import Header from "./Header/Header"
+
+import Header from "../Header/Header"
+import FrontOpacity from "../FrontNewsBoard/FrontOpacity/FrontOpacity";
 
 
 

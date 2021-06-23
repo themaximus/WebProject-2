@@ -11,8 +11,11 @@ const Menu = () => {
         <NavLink to='/Blender3D'><p className={c.MenuItem}>Blender 3D</p></NavLink>
         <p className={c.MenuItem}>Unity 3D</p>
         <p className={c.MenuItem}>Музыка</p>
-        <p className={c.MenuItem}>Кулинария</p>
+        <p className={c.MenuItem}>Статьи</p>
         <p className={c.MenuItem}>Галлерея</p>
+        <p className={c.MenuItem}>Мемуары</p>
+        <p className={c.MenuItem}>Кулинария</p>
+        <NavLink to='/EditMod'><p className={c.MenuItem}>Редактирование</p></NavLink>
         </div>
         
     )

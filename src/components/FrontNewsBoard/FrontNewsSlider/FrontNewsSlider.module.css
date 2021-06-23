@@ -26,6 +26,7 @@
     width: 50px;
     height: 50px;
     position: absolute;
+    margin-left: 10px;
     
 }
 
@@ -49,7 +50,7 @@
     height: 50px;
     border-radius: 10px;
     position: absolute;
-    margin-left: 1223px;
+    margin-left: 1213px;
 }
 
 .next:hover {

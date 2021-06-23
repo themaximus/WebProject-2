@@ -1,4 +1,4 @@
-import Content from "./Content"
+import Content from "./PagesBase/Content"
 import Header from "./Header/Header"
 import c from './GeneralWindow.module.css';
 import FrontOpacity from "./FrontNewsBoard/FrontOpacity/FrontOpacity";
