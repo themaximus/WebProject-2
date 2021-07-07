@@ -1,11 +1,19 @@
 import c from './PostObject.module.css';
-import { posttext } from './../../Redux/STATE.js';
+
+import PostHeader from './PostHeader';
+import PostFooter from './PostFooter';
+import PostContent from './PostContent';
 
 const PostObject = (props) => {
+
+    
+
     return (
-        <div className={c.PostObject} >
-            {props.posttext}
+        <div className={c.PostObject}  >
+            <PostHeader />
+            <PostContent message={props.message} />
             
+            <PostFooter/>
         </div>
     )
 }

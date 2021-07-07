@@ -1,0 +1,7 @@
+.PostContent {
+    width: 1000px;
+    min-height: 200px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px 15px 0px 0px;
+}

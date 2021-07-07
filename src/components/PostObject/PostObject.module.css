@@ -1,8 +1,10 @@
 .PostObject {
     width: 1000px;
-    height: 200px;
+    min-height: 200px;
+    height: auto;
     background-color: cornflowerblue;
     margin-left: 265px ;
-
-    
+    margin-top: 10px;
+    float: left;
+    border-radius: 15px;
 }

@@ -1,14 +1,13 @@
 import React from "react"
 
-let Store = {
-    _State: {
-        postText: {
-            text: [
-                {id:1, con: 'Банан'}
-            ],
-        }
-      }
+let State = {
+   PostsEdit: [
+
+       { message:'Когда нибудь седержимое этого поста окажется в необходимом Максиму месте. Конкретного времени и даты этого события знать нельзя, но главное что оно есть. Получилось)' }
+
+
+   ]
 }
 
 
-export default Store;
+export default State;

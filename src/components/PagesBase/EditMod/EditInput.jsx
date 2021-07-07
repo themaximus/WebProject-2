@@ -5,8 +5,8 @@ import c from './EditInput.module.css';
 
 const EditInput = () => {
     return (
-        <div >
-           	   <input className= {c.EditInput} ></input>
+        <div className={c.EditInputContaner} >
+           	 <textarea className={c.textarea}></textarea>  
         </div>
     )
 }

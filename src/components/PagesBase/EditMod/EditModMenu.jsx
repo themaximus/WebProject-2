@@ -5,8 +5,8 @@ import c from './EditModMenu.module.css';
 
 const EditModMenu = () => {
     return (
-        <div >
-           	   <p className= {c.EditModMenu} ></p>
+        <div className= {c.EditModMenu} >
+           	   Редакция
         </div>
     )
 }

@@ -1,6 +1,6 @@
 
 
-
+import c from './EditMod.module.css'
 import FrontOpacity from "../../FrontNewsBoard/FrontOpacity/FrontOpacity";
 import Header from "../../Header/Header";
 import PostObject from "../../PostObject/PostObject";
@@ -12,16 +12,23 @@ import EditModMenu from "./EditModMenu";
 
 
 const EditMod = (props) => {
+
+    let messagePostObject = props.PostsEdit.map ( m => <PostObject message={m.message}/> ) ;
+
     return (
-        <div>
+        <div className={c.EditMod}>
+            
            <Header/>
            <FrontOpacity/>
            <EditInput/>
-
-           <EditEnterText/>
-           
-           <PostObject posttext='куку' />
            <EditModMenu/>
+           <EditEnterText/>
+          { messagePostObject }
+          
+          
+          
+           
+           
         </div>
     )
 }

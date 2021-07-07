@@ -9,7 +9,7 @@ const Header = () => {
         <div className={c.Header}>
             <HeaderLogo />
             <MenuIcon />
-            <div className={c.betatest}><a>Тестовая версия сайта. Содержимое не имеет финальный вид.</a></div>
+            <div className={c.betatest}>Тестовая версия сайта. Содержимое не имеет финальный вид.</div>
             <Menu />
             
         </div>
