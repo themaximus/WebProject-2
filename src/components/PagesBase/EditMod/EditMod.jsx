@@ -11,19 +11,22 @@ import EditModMenu from "./EditModMenu";
 
 
 
-const EditMod = (props) => {
 
-    let messagePostObject = props.PostsEdit.map ( m => <PostObject message={m.message}/> ) ;
+const EditMod = (props) => {
+    
+    let messagePostObject = props.PostsEdit.map ( m => <PostObject message={m.message} id={m.id} namepost={m.namepost} urlimage={m.urlimage} /> ) ;
 
     return (
         <div className={c.EditMod}>
             
            <Header/>
            <FrontOpacity/>
-           <EditInput/>
-           <EditModMenu/>
-           <EditEnterText/>
+           
+           
+           <EditEnterText addPost={props.addPost} />
           { messagePostObject }
+          
+          
           
           
           

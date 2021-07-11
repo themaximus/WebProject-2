@@ -1,0 +1,41 @@
+.img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 800px;
+    position: relative;
+    display: ;
+}
+
+.img2 {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 800px;
+    position: relative;
+    display: none ;
+}
+
+.PostLikeNumber {
+    color: rgb(0, 0, 0);
+    position: relative;
+    position: absolute;
+    
+}
+
+
+.img:hover {
+    color: rgb(90, 90, 90);
+    background: rgba(102, 102, 102, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+    
+  }
+
+  .img2:hover {
+    color: rgb(90, 90, 90);
+    background: rgba(102, 102, 102, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+    
+  }

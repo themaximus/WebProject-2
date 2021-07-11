@@ -14,7 +14,7 @@ const App = (props) => {
       <div>
         <Route path='/Content' render={ () => <GeneralWindow />}/>
         <Route path='/Blender3D' render={ () => <Blender3D />}/>
-        <Route path='/EditMod' render={ () => <EditMod PostsEdit={props.PostsEdit} />}/>
+        <Route path='/EditMod' render={ () => <EditMod PostsEdit={props.PostsEdit}  addPost={props.addPost} />}/>
 
       </div>
       

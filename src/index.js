@@ -5,13 +5,22 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import State from './Redux/STATE.js';
 
-ReactDOM.render(
+import {addPost, subscribe} from './Redux/STATE.js';
+
+
+let renderEntireTree = () => {
+ ReactDOM.render(
   <React.StrictMode>
-    <App PostsEdit={State.PostsEdit} />
+    <App PostsEdit={State.PostsEdit} addPost={addPost} />
     
   </React.StrictMode>,
   document.getElementById('root')
 );
+ }
+
+ subscribe(renderEntireTree);
+
+ renderEntireTree();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -1,7 +1,46 @@
 .PostContent {
     width: 1000px;
-    min-height: 200px;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px 15px 0px 0px;
+    height: 200px;
+    
+    overflow: hidden;
+    
+    
+    
+}
+
+.images {
+   
+    z-index: -1;
+    width: 1000px;
+    float: left;
+    position: relative;
+    
+}
+
+.message {
+    float: left;
+    position: absolute;
+    width: 600px;
+    color: white;
+    margin-left: 200px;
+    margin-top: 50px;
+    z-index: 2;
+}
+
+.NamePost {
+    float: left;
+    position: absolute;
+    width: 1000px;
+    color: white;
+    font-size: 40px;
+    font-weight:bold;
+    z-index: 2;
+}
+
+.opacity {
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    width: 1000px;
+    height: 200px;
+    opacity: 0.5;
 }

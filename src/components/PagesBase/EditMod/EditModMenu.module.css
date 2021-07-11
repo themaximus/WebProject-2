@@ -8,3 +8,14 @@
         display: block;
         float: left;
 }
+
+.img {
+        width: 20px;
+        height: 20px;
+        
+}
+
+.EditModMenuOptions {
+        margin-top: 5px;
+        
+}

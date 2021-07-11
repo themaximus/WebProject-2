@@ -6,6 +6,176 @@
     text-align:center;
     float: left;
     display: block;
-    margin-top: 60px;
+    margin-top: 40px;
     border-radius: 0px 15px 15px 0px;
+}
+
+.img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.EnterName {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+.textarea {
+    width: 760px;
+    height: 44px;
+    resize: none;
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.textarea2 {
+    width: 760px;
+    height: 44px;
+    resize: none;
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.EditInputContaner {
+    background-color: rgb(255, 0, 0);
+    width: 760px;
+    height: 50px;
+    margin-left: 265px;
+    float: left;
+    margin-top: 40px;
+    border-radius: 15px 0px 0px 15px;
+    
+}
+
+.EditInputContaner2 {
+    background-color: rgb(255, 0, 0);
+    width: 760px;
+    height: 50px;
+    margin-left: 265px;
+    float: left;
+    margin-top:40px;
+    border-radius: 15px 0px 0px 15px;
+    
+}
+
+
+.textarea3 {
+    width: 760px;
+    height: 44px;
+    resize: none;
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+    border-radius: 15px 0px 0px 15px;
+
+}
+
+.EditInputContaner3 {
+    background-color: rgb(255, 255, 255);
+    width: 760px;
+    height: 50px;
+    margin-left: 265px;
+    float: left;
+    margin-top: 90px;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px black solid;
+}
+
+
+.EditModMenu {
+    width: 120px;
+    height: 50px;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    margin-top: 40px;
+    text-align:center;
+    display: block;
+    float: left;
+}
+
+.EditModMenu2 {
+    width: 120px;
+    height: 52px;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    margin-top: 90px;
+    text-align:center;
+    display: block;
+    float: left;
+    position: absolute;
+    margin-left: 1027px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.EditModMenu3 {
+    width: 120px;
+    height: 52px;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    margin-top: 90px;
+    text-align:center;
+    display: block;
+    float: left;
+}
+
+.EditModMenu5 {
+    position: absolute;
+}
+
+
+.img2 {
+    width: 20px;
+    height: 20px;
+    
+}
+.img3 {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    
+    margin-top: 120px;
+    margin-left: 1078px;
+}
+
+.EditModMenuOptions {
+    margin-top: 5px;
+    
+}
+
+.EditModMenuOptions2 {
+    margin-top: 5px;
+    
+}
+
+.NamePostText {
+    margin-top: 240px;
+    margin-left: 265px;
+    position: absolute;
+}
+
+.NamePostText2 {
+    margin-top: 330px;
+    margin-left: 265px;
+    position: absolute;
+}
+
+.NamePostText3 {
+    margin-top: 60px;
+    margin-left: 265px;
+    position: absolute;
+}
+
+.NamePostText4 {
+    margin-top: 150px;
+    margin-left: 265px;
+    position: absolute;
 }
