@@ -1,12 +1,22 @@
 .MiniNewsBoard {
-    width: 17%;
+    width: 260px;
     height: 700px;
     background-color: white;
     float: left;
     margin-top: 50px;
     text-align: left;
+    overflow: scroll;
 }
 
 .MiniNewsBoardItem {
     margin-left: 20px;
 }
+
+.MiniNewsBoard::-webkit-scrollbar {
+    width: 0em;
+    background: rgb(255, 255, 255);
+}
+
+.MiniNewsBoard::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+  }

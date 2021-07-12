@@ -16,6 +16,37 @@
     margin-top: 10px;
     margin-left: 20px;
     position: absolute;
+   
+}
+
+.img2 {
+    width: 20px;
+    height: 20px;
+    display: ;
+}
+.img3 {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    
+    margin-top: 65px;
+    margin-left: 820px;
+}
+
+.img4 {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: none;
+}
+.img5 {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: none;
+    margin-top: 65px;
+    margin-left: 820px;
+    
 }
 
 .EnterName {
@@ -42,8 +73,19 @@
     outline: none;
     outline-offset: 0;
     box-shadow: none;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 15px 15px 15px;
 }
+
+.textarea5 {
+    width: 760px;
+    height: 44px;
+    resize: none;
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+    border-radius: 15px 15px 15px 15px;
+}
+
 
 .EditInputContaner {
     background-color: rgb(255, 0, 0);
@@ -57,12 +99,24 @@
 }
 
 .EditInputContaner2 {
-    background-color: rgb(255, 0, 0);
+    
     width: 760px;
     height: 50px;
     margin-left: 265px;
     float: left;
-    margin-top:40px;
+    margin-top:90px;
+    border-radius: 15px 0px 0px 15px;
+    
+}
+
+.EditInputContaner5 {
+    background-color: rgb(0, 0, 0);
+    width: 760px;
+    height: 50px;
+    margin-left: 10px;
+    float: left;
+    margin-top:10px;
+    margin-bottom: 10px;
     border-radius: 15px 0px 0px 15px;
     
 }
@@ -83,9 +137,9 @@
     background-color: rgb(255, 255, 255);
     width: 760px;
     height: 50px;
-    margin-left: 265px;
+    margin-left: 10px;
     float: left;
-    margin-top: 90px;
+    margin-top: 40px;
     border-radius: 15px 0px 0px 15px;
     border: 1px black solid;
 }
@@ -105,15 +159,17 @@
 .EditModMenu2 {
     width: 120px;
     height: 52px;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(41, 41, 41);
     color: white;
-    margin-top: 90px;
+    margin-top: 40px;
     text-align:center;
     display: block;
     float: left;
+    
     position: absolute;
-    margin-left: 1027px;
+    margin-left: 772px;
     border-radius: 0px 15px 15px 0px;
+    
 }
 
 .EditModMenu3 {
@@ -132,24 +188,20 @@
 }
 
 
-.img2 {
-    width: 20px;
-    height: 20px;
-    
-}
-.img3 {
-    width: 20px;
-    height: 20px;
-    position: relative;
-    
-    margin-top: 120px;
-    margin-left: 1078px;
-}
+
 
 .EditModMenuOptions {
     margin-top: 5px;
     
 }
+
+.img2:hover {
+    color: rgb(90, 90, 90);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: none;
+    
+  }
 
 .EditModMenuOptions2 {
     margin-top: 5px;
@@ -157,25 +209,53 @@
 }
 
 .NamePostText {
-    margin-top: 240px;
-    margin-left: 265px;
-    position: absolute;
-}
-
-.NamePostText2 {
-    margin-top: 330px;
-    margin-left: 265px;
-    position: absolute;
-}
-
-.NamePostText3 {
     margin-top: 60px;
     margin-left: 265px;
     position: absolute;
 }
 
-.NamePostText4 {
+.NamePostText2 {
     margin-top: 150px;
     margin-left: 265px;
     position: absolute;
 }
+
+.NamePostText3 {
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    color: white;
+}
+
+.NamePostText4 {
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    color: white;
+}
+
+.EditBlockMenu {
+    width: 1000px;
+    min-height: 200px;
+    display: none;
+    background-color: black;
+    margin-left: 265px ;
+    margin-top: 10px;
+    float: left;
+    border-radius: 15px;
+    transition: .55s opacity, .55s visibility;
+}
+
+.EditBlockMenuPages {
+    width: 882px;
+    min-height: 200px;
+    display: none ;
+    background-color: rgb(41, 41, 41);
+    margin-left: 10px ;
+    margin-top: 10px;
+    float: left;
+    border-radius: 15px;
+    transition: .55s opacity, .55s visibility;
+}
+
+

@@ -5,6 +5,7 @@ import Blender3D from './components/PagesBase/Blender3D';
 import GeneralWindow from './components/GeneralWindow';
 import EditMod from './components/PagesBase/EditMod/EditMod';
 
+
 const App = (props) => {
   return (
     <BrowserRouter> 
@@ -12,9 +13,9 @@ const App = (props) => {
       
       
       <div>
-        <Route path='/Content' render={ () => <GeneralWindow />}/>
+        <Route path='/Content' render={ () => <GeneralWindow  PostsEdit={props.PostsEdit} />}/>
         <Route path='/Blender3D' render={ () => <Blender3D />}/>
-        <Route path='/EditMod' render={ () => <EditMod PostsEdit={props.PostsEdit}  addPost={props.addPost} />}/>
+        <Route path='/EditMod' render={ () => <EditMod PostsEdit={props.PostsEdit} updateNewPostText={props.updateNewPostText}  addPost={props.addPost} newPostText={props.newPostText} PageList={props.PageList} newPostImageURL={props.newPostImageURL} newPostName={props.newPostName} updateNewPostName={props.updateNewPostName} updateNewPostImageURL={props.updateNewPostImageURL} />}/>
 
       </div>
       

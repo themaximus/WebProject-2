@@ -2,9 +2,13 @@ import c from './PostTime.module.css'
 
 
 const PostTime = () => {
+
+    let today = new Date();
+    
+    
     return (
         <div className={c.PostTime}>
-            17:24 , 08.07.2021
+           {today.toLocaleString()}; 
         </div>
     )
 }

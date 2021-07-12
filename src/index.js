@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import State from './Redux/STATE.js';
+import State, { updateNewPostText, updateNewPostName, updateNewPostImageURL } from './Redux/STATE.js';
 
 import {addPost, subscribe} from './Redux/STATE.js';
 
@@ -11,12 +11,17 @@ import {addPost, subscribe} from './Redux/STATE.js';
 let renderEntireTree = () => {
  ReactDOM.render(
   <React.StrictMode>
-    <App PostsEdit={State.PostsEdit} addPost={addPost} />
+    <App PostsEdit={State.PostsEdit} addPost={addPost} newPostText={State.newPostText} newPostName={State.newPostName} newPostImageURL={State.newPostImageURL} updateNewPostText={updateNewPostText} updateNewPostName={updateNewPostName}  PageList={State.PageList} updateNewPostImageURL={updateNewPostImageURL} />
     
   </React.StrictMode>,
   document.getElementById('root')
 );
  }
+
+
+ 
+
+
 
  subscribe(renderEntireTree);
 

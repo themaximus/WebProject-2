@@ -4,10 +4,14 @@ import MiniNewsBoard from "../MiniNewsBoard/MiniNewsBoard"
 
 
 
-const Content = () => {
+const Content = (props) => {
+
+    
+
+    
     return (
         <div>
-           <MiniNewsBoard />
+           <MiniNewsBoard PostsEdit={props.PostsEdit}   />
            <FrontNewsBoard />
            
         </div>

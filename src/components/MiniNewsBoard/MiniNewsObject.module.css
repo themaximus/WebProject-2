@@ -1,0 +1,11 @@
+
+.MiniNewsObject {
+    width: 100%;
+    height: 50px;
+    background-color: blanchedalmond;
+    margin-left: 20px;
+}
+
+.MiniNewsBoardItem {
+    margin-left: 20px;
+}

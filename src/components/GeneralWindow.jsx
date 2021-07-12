@@ -5,11 +5,11 @@ import FrontOpacity from "./FrontNewsBoard/FrontOpacity/FrontOpacity";
 
 
 
-const GeneralWindow = () => {
+const GeneralWindow = (props) => {
     return (
         <div className={c.GeneralWindow}>
             <Header/>
-            <Content/>
+            <Content PostsEdit={props.PostsEdit}  />
             <FrontOpacity/>
         </div>
     )

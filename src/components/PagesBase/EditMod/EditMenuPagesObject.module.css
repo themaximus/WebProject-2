@@ -1,0 +1,29 @@
+.EditMenuPagesObject {
+    width: 882px;
+    height: 50px;
+    background-color: rgb(65, 65, 65);
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 15px 15px 15px 15px;
+    color: white;
+    
+}
+
+a {
+    font-size: 20px;
+    
+   
+    margin-top: 10px;
+}
+
+.PagesObject {
+    float: inline;
+}
+
+.EditMenuPagesObject:hover {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: none;
+    
+  }
