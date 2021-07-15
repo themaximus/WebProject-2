@@ -1,0 +1,7 @@
+.DialogueList {
+    width: 200px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}

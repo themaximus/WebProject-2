@@ -1,0 +1,11 @@
+.HeaderProfile {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    float: right;
+    display: none;
+}
+
+.PreviewMessage {
+    display: none;
+}

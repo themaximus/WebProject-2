@@ -1,0 +1,65 @@
+.DialogueInput {
+    width: 500px;
+    height: 75px;
+    background-color: rgb(0, 0, 0);
+    bottom: 0px;
+    position: absolute;
+    margin-left: 200px;
+}
+
+.input {
+    width: 308px;
+    height: 50px;
+    resize: none;
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+    border-radius: 5px 0px 0px 5px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 9px;
+    border-color: white;
+}
+
+.buttonSend {
+    width: 56px;
+    height: 56px;
+    background-color: white;
+    float: left;
+    margin-top: 9px;
+}
+.buttonSmile {
+    width: 56px;
+    height: 56px;
+    background-color: white;
+    float: left;
+    margin-top: 9px;
+}
+.buttonContent {
+    width: 56px;
+    height: 56px;
+    background-color: white;
+    float: left;
+    margin-top: 9px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.img {
+    width: 25px;
+    height: 25px;
+    margin-top: 16px;
+    margin-left: 32px;
+}
+.img2 {
+    width: 25px;
+    height: 25px;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.img3 {
+    width: 25px;
+    height: 25px;
+    margin-top: 16px;
+    
+}

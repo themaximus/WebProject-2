@@ -1,0 +1,10 @@
+.ProfilePreviewName {
+    float: right;
+    margin-right: 85px;
+    color: white;
+}
+
+.ProfilePreviewNameStatus {
+    float: left;
+    color: greenyellow;
+}

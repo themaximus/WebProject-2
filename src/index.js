@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import State, { updateNewPostText, updateNewPostName, updateNewPostImageURL } from './Redux/STATE.js';
+import Store from './Redux/STATE.js';
 
-import {addPost, subscribe} from './Redux/STATE.js';
+
 
 
 let renderEntireTree = () => {
  ReactDOM.render(
   <React.StrictMode>
-    <App PostsEdit={State.PostsEdit} addPost={addPost} newPostText={State.newPostText} newPostName={State.newPostName} newPostImageURL={State.newPostImageURL} updateNewPostText={updateNewPostText} updateNewPostName={updateNewPostName}  PageList={State.PageList} updateNewPostImageURL={updateNewPostImageURL} />
+    <App  State={Store.getState()} PostsEdit={Store._State.PostsEdit} dispatch={Store.dispatch.bind(Store)} newPostText={Store._State.newPostText} newPostName={Store._State.newPostName} newPostImageURL={Store._State.newPostImageURL}    PageList={Store._State.PageList}  />
     
   </React.StrictMode>,
   document.getElementById('root')
@@ -23,7 +23,7 @@ let renderEntireTree = () => {
 
 
 
- subscribe(renderEntireTree);
+ Store.subscribe(renderEntireTree);
 
  renderEntireTree();
 

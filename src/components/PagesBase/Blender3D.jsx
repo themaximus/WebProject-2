@@ -11,6 +11,9 @@ const Blender3D = () => {
         <div className={c.Blender3D} >
            <Header/>
            <FrontOpacity/>
+
+            
+
         </div>
     )
 }

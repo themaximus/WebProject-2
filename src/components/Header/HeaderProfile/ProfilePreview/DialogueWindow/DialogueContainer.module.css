@@ -1,0 +1,9 @@
+.DialogueContainer {
+    width: 700px;
+    height: 400px;
+    background-color: brown;
+    float: right;
+    margin-top: 50px;
+    position: relative;
+    display: none;
+}

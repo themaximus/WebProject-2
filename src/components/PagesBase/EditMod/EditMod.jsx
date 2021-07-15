@@ -23,7 +23,7 @@ const EditMod = (props) => {
            <FrontOpacity/>
            
            
-           <EditEnterText addPost={props.addPost} updateNewPostText={props.updateNewPostText} newPostText={props.newPostText} PageList={props.PageList} newPostImageURL={props.newPostImageURL}  newPostName={props.newPostName} updateNewPostName={props.updateNewPostName} updateNewPostImageURL={props.updateNewPostImageURL} />
+           <EditEnterText   newPostText={props.newPostText} PageList={props.PageList} newPostImageURL={props.newPostImageURL}  newPostName={props.newPostName} dispatch={props.dispatch}   />
           { messagePostObject }
           
           

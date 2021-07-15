@@ -11,4 +11,5 @@
     float: left;
     margin-left: 200px;
     margin-bottom: 100px;
+    position: fixed;
 }

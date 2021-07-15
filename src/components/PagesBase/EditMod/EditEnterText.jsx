@@ -1,7 +1,11 @@
 import c from "./EditEnterText.module.css";
 import React from "react";
-import EditBlockMenu from "./EditBlockMenu";
 import EditMenuPagesObject from "./EditMenuPagesObject";
+import { addPostActionCreator, onImageURLChangeActionCreator, onNameChangeActionCreator, onPostChangeActionCreator } from "../../../Redux/STATE";
+
+
+
+
 
 
 
@@ -16,23 +20,31 @@ const EditEnterText = (props) => {
     let urlimage = newPostElement1.current.value;
     let namepost = newPostElement2.current.value;
     let message = newPostElement3.current.value;
-   props.addPost(namepost, message, urlimage);
+   props.dispatch(addPostActionCreator(namepost, message, urlimage));
+   //namepost, message, urlimage
+  // urlimage: urlimage , namepost: namepost , message: message  
   };
 
   let onPostChange = () => {
     let message = newPostElement3.current.value;
-    props.updateNewPostText(message);
+    props.dispatch(onPostChangeActionCreator(message));
+    //message
   }
 
   let onNameChange = () => {
     let namepost = newPostElement2.current.value;
-    props.updateNewPostName(namepost);
+    props.dispatch(onNameChangeActionCreator(namepost));
+    //namepost
   }
 
   let onImageURLChange = () => {
     let urlimage = newPostElement1.current.value;
-    props.updateNewPostImageURL(urlimage);
+    props.dispatch(onImageURLChangeActionCreator(urlimage));
+    //urlimage
   }
+
+
+  // открыть/закрыть меню настроек редактора.
 
   let EditBlockMenuOpen = () => {
     let Menu = document.getElementById('EditMenu');
@@ -56,6 +68,7 @@ const EditEnterText = (props) => {
     
   }
 
+  // открыть/закрыть - меню выбора раздела внутри настроек.
 
   let EditBlockMenuPagesOpen = () => {
     let Menu = document.getElementById('EditBlockObject');
