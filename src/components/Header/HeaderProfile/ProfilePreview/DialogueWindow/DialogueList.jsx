@@ -3,11 +3,13 @@ import DialogueObject from './DialogueObject';
 
 
 
-const DialogueList = () => {
+
+
+const DialogueList = (props) => {
+    let DialogueElement = props.DialogueList.map ( de => <DialogueObject id={de.id} nameDialogue={de.nameDialogue} avatar={de.avatar} /> ) ;
     return (
         <div className={c.DialogueList}>
-            <DialogueObject/>
-            
+           { DialogueElement }
         </div>
     )
 }

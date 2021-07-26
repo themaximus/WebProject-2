@@ -8,7 +8,7 @@ import FrontOpacity from "./FrontNewsBoard/FrontOpacity/FrontOpacity";
 const GeneralWindow = (props) => {
     return (
         <div className={c.GeneralWindow}>
-            <Header/>
+            <Header newPersonalMessage={props.newPersonalMessage} PersonalMessage={props.PersonalMessage} DialogueList={props.DialogueList} dispatch={props.dispatch}/>
             <Content PostsEdit={props.PostsEdit}  />
             <FrontOpacity/>
         </div>

@@ -1,13 +1,22 @@
 import React from "react"
+import PageListReducer from "./PageListReducer";
+import PersonalMessage from "./PersonalMessageReducer";
+import PostsEditReducer from "./PostsEditReducer";
+
+
 
 
 let Store = {
    
     _State: {
-        PostsEdit: [
+        PostsEdit: {
      
-            { id:'2', namepost:'Монеточка как эталон красоты', message:'Когда нибудь седержимое этого поста окажется в необходимом Максиму месте. Конкретного времени и даты этого события знать нельзя, но главное что оно есть. Получилось)', urlimage:'https://i.ibb.co/h2nLWQ0/1231-1.png' }
-        ],
+           posts: [ { id:'2', namepost:'Монеточка как эталон красоты', message:'Когда нибудь седержимое этого поста окажется в необходимом Максиму месте. Конкретного времени и даты этого события знать нельзя, но главное что оно есть. Получилось)', urlimage:'https://i.ibb.co/h2nLWQ0/1231-1.png' } ],
+
+        newPostText:'1',
+        newPostName:'1',
+        newPostImageURL:'1',
+        },
      
         PageList: [
             {id:'1', pageName:'Вильтарский Соннектион'},
@@ -21,9 +30,26 @@ let Store = {
             {id:'9', pageName:'Кирилл Махнюк'}
             
         ],
-        newPostText:'',
-        newPostName:'',
-        newPostImageURL:'',
+
+       // DialogList
+
+//ЛИЧНЫЕ СООБЩЕНИЯ
+        Messanger: {
+        PersonalMessage: [
+            {id: '1', humanMessage:'Привет Максим, это Я! Максим из будущего! У ТЕБЯ ВСЁ НА МНОГО ЛУЧШЕ ТОГО ЧТО ТЫ МОЖЕШЬ ПРЕДСТАВИТЬ!'}
+            
+        ],
+
+        DialogueList: [
+            {id:'1', nameDialogue:'Евкакий', avatar:'https://i.ibb.co/yfkgqJg/IMG-20210624-132452-461.jpg'},
+            {id:'2', nameDialogue:'Евгения', avatar:'https://i.ibb.co/TPjGWrW/zhenev-a-181060129-760490317941922-8401020421883417395-n.jpg'},
+            {id:'3', nameDialogue:'Ксения', avatar:'https://i.ibb.co/Qkf65DC/moartea-ta-217898903-947835389093732-5271045249338633342-n.jpg'},
+            {id:'4', nameDialogue:'Владислав', avatar:'https://i.ibb.co/RScjstp/Jske4-Ge8xcs.jpg'}
+
+        ],
+
+        newPersonalMessage:'1123123',
+    }
      
         
         
@@ -42,56 +68,24 @@ let Store = {
      },
 
      dispatch(action) {
-         if (action.type === 'ADD-POST') {
-            let newPost = {
-                id:3,
-                namepost: action.namepost,
-                message: action.message,
-                urlimage: action.urlimage
-            };
-            this._State.PostsEdit.push(newPost);
-            this._State.newPostText = '';
-            this._State.newPostName = '';
-            this._State.newPostImageURL = '';
-            this._renderEntireTree(this._State);
-    
-     }  else if (action.type === 'UPDATE-NEW-POST-TEXT') {
-        this._State.newPostText = action.message;
+
+        this._State.PostsEdit =  PostsEditReducer(this._State.PostsEdit, action);
+        this._State.PersonalMessage =  PersonalMessage(this._State.Messanger, action);
+        this._State.PageList =  PageListReducer(this._State.PageList, action);
+
+        
         this._renderEntireTree(this._State);
-    } else if (action.type === 'UPDATE-NEW-POST-NAME') {
-        this._State.newPostName = action.namepost;
-        this._renderEntireTree(this._State);
-    } else if (action.tupe === 'UPDATE-NEW-POST-IMAGE-URL') {
-        this._State.newPostImageURL = action.urlimage;
-        this._renderEntireTree(this._State);
-    }
+     
 
 }
 }
 
-export let addPostActionCreator = (namepost, message, urlimage) => {
-    return {
-      type: 'ADD-POST',urlimage: urlimage , namepost: namepost , message: message 
-    }
-  }
-  
-  export let onPostChangeActionCreator = (message) => {
-      return {
-        type:'UPDATE-NEW-POST-TEXT', message: message  
-      }
-  }
-  
-  export let onNameChangeActionCreator = (namepost) => {
-      return {
-        type:'UPDATE-NEW-POST-NAME', namepost: namepost 
-      }
-  }
-  
-  export let onImageURLChangeActionCreator = (urlimage) => {
-      return {
-        type:'UPDATE-NEW-POST-IMAGE-URL', urlimage: urlimage 
-      }
-  }
+
+
+
+
+
+
 
 export default Store;
 Window.Store = Store;

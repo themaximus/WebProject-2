@@ -4,11 +4,11 @@ import PostOptions from './PostOptions'
 import PostPage from './PostPage'
 
 
-const PostHeader = () => {
+const PostHeader = (props) => {
     return (
         <div className={c.PostHeader}>
             <PostAvatar/> 
-            <PostPage/>
+            <PostPage section={props.section}/>
             <PostOptions/>
         </div>
     )

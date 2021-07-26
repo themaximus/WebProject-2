@@ -1,10 +1,10 @@
 import c from './PostPage.module.css'
 
 
-const PostPage = () => {
+const PostPage = (props) => {
     return (
         <div className={c.PostPage}>
-            <p>Фан-клуб Монеточки</p>
+            <p>{props.section}</p>
         </div>
     )
 }

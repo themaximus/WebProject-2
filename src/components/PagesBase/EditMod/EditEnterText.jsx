@@ -1,7 +1,8 @@
 import c from "./EditEnterText.module.css";
 import React from "react";
 import EditMenuPagesObject from "./EditMenuPagesObject";
-import { addPostActionCreator, onImageURLChangeActionCreator, onNameChangeActionCreator, onPostChangeActionCreator } from "../../../Redux/STATE";
+import { addPostActionCreator, addPostBlender3dActionCreator, onImageURLChangeActionCreator, onNameChangeActionCreator, onPostChangeActionCreator, onSectionActionCreator } from "../../../Redux/PostsEditReducer";
+
 
 
 
@@ -13,14 +14,26 @@ const EditEnterText = (props) => {
   let newPostElement1 = React.createRef();
   let newPostElement2 = React.createRef();
   let newPostElement3 = React.createRef();
-   
+  let newPostElement4 = React.createRef();
   
 
   let AddPost = () => {
     let urlimage = newPostElement1.current.value;
     let namepost = newPostElement2.current.value;
     let message = newPostElement3.current.value;
-   props.dispatch(addPostActionCreator(namepost, message, urlimage));
+    let section = newPostElement4.current.value;
+   props.dispatch(addPostActionCreator(namepost, message, urlimage, section));
+   //namepost, message, urlimage
+  // urlimage: urlimage , namepost: namepost , message: message  
+  };
+
+
+  let AddPostBlender3d = () => {
+    let urlimage = newPostElement1.current.value;
+    let namepost = newPostElement2.current.value;
+    let message = newPostElement3.current.value;
+    let section = newPostElement4.current.value;
+   props.dispatch(addPostBlender3dActionCreator(namepost, message, urlimage, section));
    //namepost, message, urlimage
   // urlimage: urlimage , namepost: namepost , message: message  
   };
@@ -41,6 +54,12 @@ const EditEnterText = (props) => {
     let urlimage = newPostElement1.current.value;
     props.dispatch(onImageURLChangeActionCreator(urlimage));
     //urlimage
+  }
+
+  let onSectionChange = () => {
+    let section = newPostElement4.current.value;
+    props.dispatch(onSectionActionCreator(section));
+    //section
   }
 
 
@@ -129,13 +148,14 @@ const EditEnterText = (props) => {
       <div className={c.EditBlockMenu} id='EditMenu'> 
       <div className={c.NamePostText3}>Раздел</div>
 
-      <div className={c.EditInputContaner3}></div>
+      <input ref={newPostElement4} onChange={onSectionChange} className={c.EditInputContaner3} value={props.newPostSection}></input>
       <div className={c.EditModMenu5}>
-        <div className={c.EditModMenu2}>Выбрать</div>
+        {/* <div className={c.EditModMenu2} onClick={AddPostBlender3d}>Выбрать</div>
         <img
           src="https://i.ibb.co/18HdbZx/Edit-Options.png"
           className={c.img3} id='img5' onClick={EditBlockMenuPagesOpen}
-        ></img>
+        ></img> */}
+        
         <img src="https://i.ibb.co/SR5cyTK/white67345.png" id='img6' className={c.img5} onClick={EditBlockMenuPagesClose}></img>
       </div>
 
@@ -145,7 +165,7 @@ const EditEnterText = (props) => {
 
       <div className={c.NamePostText4}>URL превью изображения в баннере</div>
       <div className={c.EditInputContaner5}>
-        <textarea className={c.textarea5} ref={newPostElement1} onChange={onImageURLChange} value={props.newPostImageURL} ></textarea>
+        <input className={c.textarea5} ref={newPostElement1} onChange={onImageURLChange} value={props.newPostImageURL} ></input>
       </div>
       </div>
     </div>

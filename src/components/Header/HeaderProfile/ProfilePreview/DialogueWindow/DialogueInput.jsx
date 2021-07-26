@@ -1,12 +1,31 @@
 import c from './DialogueInput.module.css';
+import React from "react";
+import { addHumanMessageActionCreator, onHumanMessageChangeActionCreator } from '../../../../../Redux/PersonalMessageReducer';
 
 
 
-const DialogueInput = () => {
+const DialogueInput = (props) => {
+
+    let newHumanMessageElement = React.createRef();
+
+    let AddHumanMessage = () => {
+        let humanMessage = newHumanMessageElement.current.value;
+        
+       props.dispatch(addHumanMessageActionCreator(humanMessage));  
+      };
+
+
+      let onHumanMessageChange = () => {
+        let humanMessage = newHumanMessageElement.current.value;
+        props.dispatch(onHumanMessageChangeActionCreator(humanMessage));
+        //message
+      }
+
+
     return (
         <div className={c.DialogueInput}>
-            <textarea className={c.input} placeholder='Введите сообщение...'></textarea>
-            <div className={c.buttonSend}><img
+            <textarea className={c.input} placeholder='Напечатайте что нибудь...' ref={newHumanMessageElement} onChange={onHumanMessageChange} value={props.newPersonalMessage} ></textarea>
+            <div className={c.buttonSend} onClick={AddHumanMessage}  ><img
           src='https://i.ibb.co/vDbnpXn/enviar-icone.png'
           className={c.img}
         ></img></div>

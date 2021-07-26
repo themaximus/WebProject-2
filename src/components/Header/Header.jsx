@@ -7,7 +7,7 @@ import DialogueContainer from './HeaderProfile/ProfilePreview/DialogueWindow/Dia
 
 
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className={c.Header}>
             <HeaderLogo />
@@ -15,7 +15,7 @@ const Header = () => {
             <div className={c.betatest}>Тестовая версия сайта. Содержимое не имеет финальный вид.</div>
             <Menu />
             <HeaderProfile/>
-            <DialogueContainer className={c.PreviewMessage}/>
+            <DialogueContainer newPersonalMessage={props.newPersonalMessage} PersonalMessage={props.PersonalMessage} dispatch={props.dispatch} DialogueList={props.DialogueList} className={c.PreviewMessage}/>
             
         </div>
     )

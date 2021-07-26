@@ -11,12 +11,12 @@ import DialogueWindow from './DialogueWindow';
 
 
 
-const DialogueContainer = () => {
+const DialogueContainer = (props) => {
     return (
         <div className={c.DialogueContainer} id='DialogueContainer'>
-            <DialogueList/>
-            <DialogueWindow/>
-            <DialogueInput/>
+            <DialogueList DialogueList={props.DialogueList}/>
+            <DialogueWindow PersonalMessage={props.PersonalMessage}/>
+            <DialogueInput newPersonalMessage={props.newPersonalMessage} dispatch={props.dispatch}/>
         </div>
     )
 }

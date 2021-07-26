@@ -1,5 +1,8 @@
 .DialogueMessageObject {
-    width: 500px;
+    width:496px;
+    max-width: 500px;;
     min-height: 50px;
-    background-color: navy;
+    height:auto;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
 }
