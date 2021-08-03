@@ -8,7 +8,7 @@ const UPDATE_NEW_SECTION = 'UPDATE-NEW-SECTION';
 let InitialState = {
   
      
-    posts: [ { id:'2', namepost:'Монеточка как эталон красоты', message:'Когда нибудь седержимое этого поста окажется в необходимом Максиму месте. Конкретного времени и даты этого события знать нельзя, но главное что оно есть. Получилось)', urlimage:'https://i.ibb.co/h2nLWQ0/1231-1.png', section: 'Фан-клуб Монеточки' },
+    posts: [ { id:'2', namepost:'Монеточка как эталон красоты', message:'Когда нибудь седержимое этого поста окажется в необходимом Максиму месте. Конкретного времени и даты этого события знать нельзя, но главное что оно есть. Получилось)', urlimage:'https://i.ibb.co/h2nLWQ0/1231-1.png', section: 'Фан-клуб Монеточки' }
     ],
 
     postsBlender3d: [
@@ -16,6 +16,11 @@ let InitialState = {
     ],
     postsArticle: [
       
+    ],
+
+    postLinkContent: [
+          {id: '2', linkPost: '/абоба', message:'заебало'},
+          
     ],
 
  newPostText:'',
@@ -75,7 +80,7 @@ const PostsEditReducer = (PostsEdit = InitialState, action) => {
 //       return PostsEdit;
 // },
 
-if ((PostsEdit.newPostSection === 'BLENDER3D') && (action.type === ADD_POST))  {
+if ((PostsEdit.newPostSection === 'Blender 3D') && (action.type === ADD_POST))  {
   let newPostBlender3d = {
     id:3,
     namepost: action.namepost,
@@ -95,7 +100,7 @@ let newPost = {
     PostsEdit.newPostText = '';
     PostsEdit.newPostName = '';
     PostsEdit.newPostImageURL = '';
-    PostsEdit.newPostSection = '';
+    
     return PostsEdit;
 } else if ((PostsEdit.newPostSection === 'Статьи') && (action.type === ADD_POST)) {
   let newPostArticle = {

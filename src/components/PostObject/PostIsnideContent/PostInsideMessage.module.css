@@ -1,0 +1,18 @@
+.PostInsideMessage {
+    background-color: white;
+    width: 1112px;
+    height: 300px;
+    margin-left: 212px;
+    position: absolute;
+    margin-top: 60px;
+}   
+
+.PostInsideMessage img {
+    width: 1112px ;
+    
+}
+
+.Name {
+    font-size: 40px;
+    font-weight:bold;
+}

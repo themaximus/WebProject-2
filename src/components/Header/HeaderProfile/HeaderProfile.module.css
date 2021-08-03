@@ -1,9 +1,11 @@
 .HeaderProfile {
-    width: 200px;
+    width: 0px;
     height: 200px;
     background-color: blue;
     float: right;
-    display: none;
+    display: inline;
+    margin-top: 50px;
+    
 }
 
 .PreviewMessage {

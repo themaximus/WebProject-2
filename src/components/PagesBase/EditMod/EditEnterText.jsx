@@ -1,7 +1,7 @@
 import c from "./EditEnterText.module.css";
 import React from "react";
 import EditMenuPagesObject from "./EditMenuPagesObject";
-import { addPostActionCreator, addPostBlender3dActionCreator, onImageURLChangeActionCreator, onNameChangeActionCreator, onPostChangeActionCreator, onSectionActionCreator } from "../../../Redux/PostsEditReducer";
+import PostInside from "../../PostObject/PostInside";
 
 
 
@@ -22,44 +22,36 @@ const EditEnterText = (props) => {
     let namepost = newPostElement2.current.value;
     let message = newPostElement3.current.value;
     let section = newPostElement4.current.value;
-   props.dispatch(addPostActionCreator(namepost, message, urlimage, section));
-   //namepost, message, urlimage
-  // urlimage: urlimage , namepost: namepost , message: message  
-  };
-
-
-  let AddPostBlender3d = () => {
-    let urlimage = newPostElement1.current.value;
-    let namepost = newPostElement2.current.value;
-    let message = newPostElement3.current.value;
-    let section = newPostElement4.current.value;
-   props.dispatch(addPostBlender3dActionCreator(namepost, message, urlimage, section));
+    props.AddPost(namepost, message, urlimage, section);
+   //props.dispatch(addPostActionCreator(namepost, message, urlimage, section));
    //namepost, message, urlimage
   // urlimage: urlimage , namepost: namepost , message: message  
   };
 
   let onPostChange = () => {
     let message = newPostElement3.current.value;
-    props.dispatch(onPostChangeActionCreator(message));
+    props.onPostChange(message);
+    //props.dispatch(onPostChangeActionCreator(message));
     //message
   }
 
   let onNameChange = () => {
     let namepost = newPostElement2.current.value;
-    props.dispatch(onNameChangeActionCreator(namepost));
+    props.onNameChange(namepost);
     //namepost
   }
 
   let onImageURLChange = () => {
     let urlimage = newPostElement1.current.value;
-    props.dispatch(onImageURLChangeActionCreator(urlimage));
+    props.onImageURLChange(urlimage);
     //urlimage
   }
 
   let onSectionChange = () => {
     let section = newPostElement4.current.value;
-    props.dispatch(onSectionActionCreator(section));
+    props.onSectionChange(section);
     //section
+    
   }
 
 
@@ -100,19 +92,8 @@ const EditEnterText = (props) => {
     
   }
 
-  let EditBlockMenuPagesClose = () => {
-    let Menu = document.getElementById('EditBlockObject');
-    let MenuOpen = document.getElementById('img5');
-    let MenuClose = document.getElementById('img6');
 
-    Menu.style.display = 'none';
-    MenuOpen.style.display = 'inline';
-    MenuClose.style.display = 'none';
-    
-  }
-
-
-  let objectPage = props.PageList.map ( m => <EditMenuPagesObject id={m.id} pageName={m.pageName} /> ) ;
+ 
 
   return (
     <div>
@@ -127,7 +108,7 @@ const EditEnterText = (props) => {
         <textarea className={c.textarea} ref={newPostElement3} value={props.newPostText}  onChange={onPostChange} /> 
        
       </div>
-
+      
       <div className={c.EditModMenu} >
         <div className={c.EditModMenuOptions}>Настройки</div>
         <img
@@ -144,25 +125,16 @@ const EditEnterText = (props) => {
           className={c.img}
         ></img>
       </div>
-
+      
+      
       <div className={c.EditBlockMenu} id='EditMenu'> 
       <div className={c.NamePostText3}>Раздел</div>
-
-      <input ref={newPostElement4} onChange={onSectionChange} className={c.EditInputContaner3} value={props.newPostSection}></input>
-      <div className={c.EditModMenu5}>
-        {/* <div className={c.EditModMenu2} onClick={AddPostBlender3d}>Выбрать</div>
-        <img
-          src="https://i.ibb.co/18HdbZx/Edit-Options.png"
-          className={c.img3} id='img5' onClick={EditBlockMenuPagesOpen}
-        ></img> */}
-        
-        <img src="https://i.ibb.co/SR5cyTK/white67345.png" id='img6' className={c.img5} onClick={EditBlockMenuPagesClose}></img>
-      </div>
-
-    <div className={c.EditBlockMenuPages} id='EditBlockObject'>
-      {objectPage}
-    </div>
-
+      
+      <select className={c.EditInputContaner3} name="section" ref={newPostElement4} onClick={onSectionChange} >
+      {props.objectPageOption}
+      
+      
+      </select>
       <div className={c.NamePostText4}>URL превью изображения в баннере</div>
       <div className={c.EditInputContaner5}>
         <input className={c.textarea5} ref={newPostElement1} onChange={onImageURLChange} value={props.newPostImageURL} ></input>

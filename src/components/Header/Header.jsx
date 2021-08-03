@@ -13,7 +13,7 @@ const Header = (props) => {
             <HeaderLogo />
             <MenuIcon />
             <div className={c.betatest}>Тестовая версия сайта. Содержимое не имеет финальный вид.</div>
-            <Menu />
+            <Menu  PageList={props.PageList} />
             <HeaderProfile/>
             <DialogueContainer newPersonalMessage={props.newPersonalMessage} PersonalMessage={props.PersonalMessage} dispatch={props.dispatch} DialogueList={props.DialogueList} className={c.PreviewMessage}/>
             

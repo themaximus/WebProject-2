@@ -1,0 +1,16 @@
+.MenuItems {
+    width: 180px;
+    text-align: left;
+    margin-top: 10px;
+    background-color: white;
+    margin-left: 20px;
+    font-weight:lighter;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.MenuItems:hover {
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+    text-decoration: none;
+}

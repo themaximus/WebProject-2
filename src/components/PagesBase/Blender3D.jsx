@@ -13,7 +13,7 @@ const Blender3D = (props) => {
 
     return (
         <div className={c.Blender3D} >
-           <Header dispatch={props.dispatch} PersonalMessage={props.PersonalMessage} newPersonalMessage={props.newPersonalMessage} DialogueList={props.DialogueList}/>
+           <Header dispatch={props.dispatch} PersonalMessage={props.PersonalMessage} newPersonalMessage={props.newPersonalMessage} DialogueList={props.DialogueList} PageList={props.PageList}/>
            <FrontOpacity/>
 
             <div className={c.postsBlock}>{messagePostObject}</div>

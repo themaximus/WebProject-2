@@ -27,7 +27,8 @@ let Store = {
             {id:'6', pageName:'Галлерея'},
             {id:'7', pageName:'Мемуары'},
             {id:'8', pageName:'Кулинария'},
-            {id:'9', pageName:'Кирилл Махнюк'}
+            {id:'9', pageName:'Кирилл Махнюк'},
+            
             
         ],
 
